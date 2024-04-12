@@ -3,7 +3,7 @@ from openai import OpenAI
 import os
 openai.api_key = os.getenv("OPENAI_API_KEY")
 import wave
-client = OpenAI(api_key="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")
+client = OpenAI(api_key="#####")
 
 class Config:
     channels = 2

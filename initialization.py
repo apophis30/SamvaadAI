@@ -11,7 +11,7 @@ from PyPDF2 import PdfReader
 from prompts.prompt_selector import prompt_sector
 import os
 
-os.environ['OPENAI_API_KEY'] = "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"
+os.environ['OPENAI_API_KEY'] = "#####"
 def embedding(text):
     """embeddings"""
     text_splitter = NLTKTextSplitter()
@@ -66,7 +66,7 @@ def initialize_session_state(template=None, position=None):
     llm = ChatOpenAI(
             model_name="gpt-3.5-turbo",
             temperature=0.8, 
-            api_key = "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")
+            api_key = "#####")
     PROMPT = PromptTemplate(
             input_variables=["history", "input"],
             template="""I want you to act as an interviewer strictly following the guideline in the current conversation.
@@ -93,7 +93,7 @@ def initialize_session_state(template=None, position=None):
     llm = ChatOpenAI(
         model_name = "gpt-3.5-turbo",
         temperature = 0.5,
-        api_key = "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")
+        api_key = "#####")
     st.session_state.feedback = ConversationChain(
             prompt=PromptTemplate(input_variables = ["history", "input"], template = templates.feedback_template),
             llm=llm,

@@ -5,7 +5,7 @@ import streamlit as st
 from PIL import Image
 import os
 
-os.environ["OPENAI_API_KEY"] = "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"
+os.environ["OPENAI_API_KEY"] = "#####"
 
 
 # im = Image.open(r"C:\Users\a\Downloads\GPTInterviewer-main (3)\GPTInterviewer-main\icon.png")

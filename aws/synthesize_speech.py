@@ -18,7 +18,7 @@ from openai import OpenAI
 
 
 def synthesize_speech(text):
-    client = OpenAI(api_key="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")
+    client = OpenAI(api_key="#####")
     response = client.audio.speech.create(
       model="tts-1-hd",
       voice="alloy",
@@ -37,7 +37,7 @@ def synthesize_speech(text):
 
 
 def synthesize_speech_2(text):
-    client = OpenAI(api_key="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")
+    client = OpenAI(api_key="#####")
     response = client.audio.speech.create(
       model="tts-1",
       voice="alloy",
